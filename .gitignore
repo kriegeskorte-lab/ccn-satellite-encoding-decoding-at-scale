@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+._*
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Dependency and build output directories
+node_modules/
+dist/
+build/
+.cache/
+
+# Local static-server or tooling artifacts
+.parcel-cache/
+.sass-cache/
+
