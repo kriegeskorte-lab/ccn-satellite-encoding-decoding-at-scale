@@ -249,13 +249,23 @@
   /**
    * Animation on scroll
    */
-  window.addEventListener('load', () => {
+  const initAOS = () => {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
       once: true,
       mirror: false
     });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAOS)
+  } else {
+    initAOS()
+  }
+
+  window.addEventListener('load', () => {
+    AOS.refresh()
   });
 
   /**
